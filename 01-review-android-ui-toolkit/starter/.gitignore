@@ -57,15 +57,12 @@ fastlane/readme.md
 # Custom
 
 .DS_Store
-.idea/vcs.xml
-.idea/misc.xml
-.idea/modules.xml
 
 # IDEA/Android Studio ignores
 *.iml
 *.ipr
 *.iws
-/.idea/*
+/.idea/
 
 # IDEA/Android Studio Ignore exceptions
 !/.idea/vcs.xml

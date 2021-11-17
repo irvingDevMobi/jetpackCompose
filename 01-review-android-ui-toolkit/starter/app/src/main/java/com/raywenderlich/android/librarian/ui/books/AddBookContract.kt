@@ -8,11 +8,11 @@ import com.raywenderlich.android.librarian.ui.addBook.AddBookActivity
 
 class AddBookContract : ActivityResultContract<Int, Boolean>() {
 
-  override fun createIntent(context: Context, input: Int?): Intent {
-    return AddBookActivity.getIntent(context)
-  }
+    override fun createIntent(context: Context, input: Int): Intent {
+        return AddBookActivity.getIntent(context)
+    }
 
-  override fun parseResult(resultCode: Int, intent: Intent?): Boolean {
-    return resultCode == Activity.RESULT_OK
-  }
+    override fun parseResult(resultCode: Int, intent: Intent?): Boolean {
+        return resultCode == Activity.RESULT_OK
+    }
 }
